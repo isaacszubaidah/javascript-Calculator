@@ -61,10 +61,9 @@ function clearValue(C){
 let equal = document.querySelector('[data-equal]');
 equal.addEventListener('click',()=> equal(display.value))
 
-function equalTo(y){
-    answer = eval(y);
-    console.log(answer);
-    display.value = answer;
+function equalTo(value){
+    display.value = eval(value);
+    
 
 }
 
