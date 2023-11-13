@@ -52,19 +52,17 @@ function addValue(value){
 }
 
 let clear = document.querySelector('[data-clear]');
-clear.addEventListener('click',()=> clearValue(display))
+clear.addEventListener('click', () => clearValue(displayData));
 
-function clearValue(C){
-    display.value = " ";
+function clearValue(C) {
+    C.value = " ";
 }
 
-let equal = document.querySelector('[data-equal]');
-equal.addEventListener('click',()=> equal(display.value))
+let equal = document.querySelector('[data-equalTo]');
+equal.addEventListener('click', () => equalTo(displayData.value));
 
-function equalTo(value){
-    display.value = eval(value);
-    
-
+function equalTo(value) {
+    displayData.value = eval(value);
 }
 
 
